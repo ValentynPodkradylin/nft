@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+}
+
+*,*::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.swiper-slide {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset;
+}
+
+.swiper {
+    width: auto;
+    height: 100%;
+}
