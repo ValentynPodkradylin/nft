@@ -8,6 +8,7 @@ import {
   Text,
   Heading,
   Button,
+  useColorMode,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import React from "react";
@@ -27,21 +28,36 @@ const container = {
 };
 
 export const About = () => {
+  const { colorMode } = useColorMode();
+
+  const textShadow =
+    colorMode === "light"
+      ? " 0 0 5px #fff000, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de;"
+      : " 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff";
+
   return (
     <Box
       as="section"
       w="100vw"
       bgGradient={"linear-gradient(secondary-dark 0%, primary 100%)"}
+      id="about"
+      py={"20px"}
     >
       <Flex
         alignItems={"center"}
-        justifyContent="space-between"
+        justifyContent={["center", "center", "space-between", "space-between"]}
         minH={"100vh"}
         w="75%"
         mx="auto"
         gap="20px"
+        flexDir={["column-reverse", "column-reverse", "row", "row"]}
       >
-        <Center h="75%" w="40%">
+        <Center
+          flexDirection={"column"}
+          gap="20px"
+          h="75%"
+          w={["80%", "80%", "40%", "40%"]}
+        >
           <motion.div initial="hidden" animate="visible" variants={container}>
             <Image
               borderRadius={"20px"}
@@ -50,10 +66,27 @@ export const About = () => {
               h="100%"
             />
           </motion.div>
+          <Button
+            display={["flex", "flex", "none", "none"]}
+            zIndex={1}
+            colorScheme={"facebook"}
+            leftIcon={<FaDiscord />}
+          >
+            Our Discord
+          </Button>
         </Center>
-        <VStack alignItems={"flex-start"} w="50%" spacing={5}>
-          <Heading as="h3" fontSize={"5xl"}>
-            lorem
+        <VStack
+          alignItems={["center", "center", "flex-start", "flex-start"]}
+          w={["80%", "80%", "50%", "50%"]}
+          spacing={5}
+        >
+          <Heading
+            fontFamily={'"Sedgwick Ave Display", cursive'}
+            as="h3"
+            fontSize={"5xl"}
+            textShadow={textShadow}
+          >
+            Lorem
           </Heading>
           <Text>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem,
@@ -62,7 +95,12 @@ export const About = () => {
             asperiores nam commodi rem odit?
           </Text>
           <Spacer />
-          <Button colorScheme={"facebook"} leftIcon={<FaDiscord />}>
+          <Button
+            display={["none", "none", "flex", "flex"]}
+            zIndex={1}
+            colorScheme={"facebook"}
+            leftIcon={<FaDiscord />}
+          >
             Our Discord
           </Button>
         </VStack>

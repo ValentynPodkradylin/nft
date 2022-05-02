@@ -11,12 +11,19 @@ import { Box, chakra, Image } from "@chakra-ui/react";
 
 const Carousel = () => {
   return (
-    <Box w="25vw" h="75vh">
+    <Box
+      w={["60vw", "50vw", "25vw", "25vw"]}
+      h={["40vh", "60vh", "75vh", "75vh"]}
+    >
       <ChakraSwiper
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
         }}
+        observer={true}
+        observeParents={true}
+        // observer: true,
+        // observeParents: true,
         effect="cards"
         grabCursor={true}
         modules={[EffectCards, Pagination, Navigation, Autoplay]}

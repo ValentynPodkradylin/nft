@@ -1,4 +1,5 @@
 import "@fontsource/sora";
+import "@fontsource/sedgwick-ave-display";
 import "./../styles/global.css";
 import type { AppProps } from "next/app";
 import { customTheme } from "../styles/theme";
@@ -10,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <ColorModeProvider
         options={{
           initialColorMode: "dark",
-          useSystemColorMode: false,
+          useSystemColorMode: true,
         }}
       >
         <Component {...pageProps} />

@@ -1,18 +1,26 @@
-import { Box, chakra } from "@chakra-ui/react";
+import { chakra } from "@chakra-ui/react";
 import { NextPage } from "next";
-import { About, Home, Navigation, Showcase } from "./../components/sections";
+import {
+  About,
+  Home,
+  Showcase,
+  Faq,
+  Banner,
+  Roadmap,
+} from "./../components/sections";
 
 const Index: NextPage = () => {
   return (
-    <Box>
-      {/* @ts-ignore */}
-      <Navigation />
+    <>
       <Home />
       <chakra.main>
         <About />
+        <Roadmap />
         <Showcase />
+        <Faq />
+        <Banner />
       </chakra.main>
-    </Box>
+    </>
   );
 };
 

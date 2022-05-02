@@ -2,7 +2,7 @@ import React from "react";
 import { useColorMode, IconButton, ColorMode } from "@chakra-ui/react";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 
-type IconColorMode<T extends ColorMode = ColorMode> = { [K in T]: K };
+export type IconColorMode<T extends ColorMode = ColorMode> = { [K in T]: K };
 
 const DarkModeSwitch = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -14,6 +14,7 @@ const DarkModeSwitch = () => {
 
   return (
     <IconButton
+      zIndex={1000}
       aria-label="Toggle dark home"
       bg="transparent"
       icon={colorMode === "light" ? <SunIcon /> : <MoonIcon />}
