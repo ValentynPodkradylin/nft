@@ -1,6 +1,11 @@
-import { Heading, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { Heading, useColorMode, Image, keyframes } from "@chakra-ui/react";
 import React from "react";
-import Link from "next/link";
+import head from "./../images/head2.png";
+
+const spinRight = keyframes`
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg)}
+`;
 
 const Logo = () => {
   // const bgGradient = useColorModeValue(
@@ -17,12 +22,11 @@ const Logo = () => {
   return (
     <Heading
       as="h1"
+      position={"relative"}
       zIndex={1000}
       fontSize={["2xl", "3xl", "4xl", "5xl"]}
       transition="all .1s ease"
       fontFamily={'"Akaya Telivigala", cursive'}
-      // bgGradient={bgGradient}
-      // bgClip="text"
       display={"flex"}
       cursor="pointer"
       _hover={{
@@ -40,6 +44,17 @@ const Logo = () => {
       }}
     >
       DontGiveFuckBoi
+      <Image
+        display={["none", "none ", "flex", "flex"]}
+        position={"absolute"}
+        top="-20%"
+        left="-12%"
+        src={head.src}
+        alt="1"
+        h="50px"
+        w="50px"
+        animation={`${spinRight} infinite 5s linear`}
+      />
     </Heading>
   );
 };

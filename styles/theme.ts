@@ -1,11 +1,21 @@
-import { extendTheme, theme as chakraTheme } from "@chakra-ui/react";
+import {
+  extendTheme,
+  theme as chakraTheme,
+  withDefaultColorScheme,
+} from "@chakra-ui/react";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
 
 const fonts = {
   ...chakraTheme.fonts,
   body: "Akaya Telivigala, cursive",
   heading: "Akaya Telivigala, cursive",
-  color: "#ffffff",
+  styles: {
+    global: {
+      body: {
+        color: "green",
+      },
+    },
+  },
 };
 
 const breakpoints = createBreakpoints({
@@ -42,4 +52,13 @@ const overrides = {
   semanticTokens,
 };
 
-export const customTheme = extendTheme(overrides);
+export const customTheme = extendTheme({
+  ...overrides,
+  styles: {
+    global: {
+      body: {
+        color: "white",
+      },
+    },
+  },
+});

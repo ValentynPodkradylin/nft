@@ -16,9 +16,9 @@ const Index: NextPage = () => {
       <chakra.main>
         <About />
         <Roadmap />
+        <Banner />
         <Showcase />
         <Faq />
-        <Banner />
       </chakra.main>
     </>
   );

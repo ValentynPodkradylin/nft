@@ -36,7 +36,7 @@ export const Banner = () => {
           fontSize={["4xl", "4xl", "5xl", "6xl"]}
           w={["100%", "100%", "40%", "40%"]}
         >
-          Join our whitelist
+          Join our whitepaper
         </Heading>
         <Button
           as="a"
@@ -44,7 +44,7 @@ export const Banner = () => {
           colorScheme={"facebook"}
           size="lg"
         >
-          whitelist
+          whitepaper
         </Button>
       </Flex>
     </Center>

@@ -7,6 +7,8 @@ export type IconColorMode<T extends ColorMode = ColorMode> = { [K in T]: K };
 const DarkModeSwitch = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
+  console.log(colorMode);
+
   const iconColor: IconColorMode = {
     light: "light",
     dark: "dark",

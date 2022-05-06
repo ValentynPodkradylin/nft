@@ -1179,13 +1179,6 @@
 "@tootallnate/once@2":
   "version" "2.0.0"
 
-"@types/gsap@^3.0.0":
-  "integrity" "sha512-BbWLi4WRHGze4C8NV7U7yRevuBFiPkPZZyGa0rryanvh/9HPUFXTNBXsGQxJZJq7Ix7j4RXMYodP3s+OsqCErg=="
-  "resolved" "https://registry.npmjs.org/@types/gsap/-/gsap-3.0.0.tgz"
-  "version" "3.0.0"
-  dependencies:
-    "gsap" "*"
-
 "@types/json5@^0.0.29":
   "integrity" "sha1-7ihweulOEdK4J7y+UnC86n8+ce4="
   "resolved" "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
@@ -2360,11 +2353,6 @@
 
 "graceful-fs@^4.1.2", "graceful-fs@^4.2.10", "graceful-fs@^4.2.6":
   "version" "4.2.10"
-
-"gsap@*", "gsap@^3.10.4":
-  "integrity" "sha512-6QatdkKxXCMfvCW4rM++0RqyLQAzFX5nwl3yHS0XPgkZBkiSEY3VZVbMltrdtsbER/xZonLtyHt684wRp4erlQ=="
-  "resolved" "https://registry.npmjs.org/gsap/-/gsap-3.10.4.tgz"
-  "version" "3.10.4"
 
 "has-bigints@^1.0.1", "has-bigints@^1.0.2":
   "integrity" "sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ=="
