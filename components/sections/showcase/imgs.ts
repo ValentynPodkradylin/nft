@@ -32,11 +32,6 @@ export const imgs: NftImage[] = [
     tiers: "lil boi",
   },
   {
-    img: img5,
-    tiers: "big boi",
-  },
-
-  {
     img: img6,
     tiers: "lil boi",
   },
@@ -50,6 +45,10 @@ export const imgs: NftImage[] = [
   },
   {
     img: img9,
+    tiers: "half boi",
+  },
+  {
+    img: img5,
     tiers: "big boi",
   },
   {

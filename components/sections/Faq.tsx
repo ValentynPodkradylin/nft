@@ -28,7 +28,7 @@ export const Faq = () => {
       position={"relative"}
       p={"20px"}
       id="faq"
-      bg={"tertiary"}
+      bg={"my-pink"}
     >
       <Heading
         as="h2"

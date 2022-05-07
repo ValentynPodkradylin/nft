@@ -23,7 +23,7 @@ const DarkModeSwitch = () => {
       onClick={toggleColorMode}
       color={iconColor[colorMode]}
       _hover={{
-        bg: "primary-dark",
+        bg: "my-pink-dark",
       }}
     />
   );

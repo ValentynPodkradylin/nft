@@ -42,7 +42,7 @@ export const NftItem: FC<NftItemProps> = (props) => {
       passRef.current.style.animationPlayState = "running";
     }
   };
-  const pause = (event: MouseEvent<HTMLDivElement, globalThis.MouseEvent>) => {
+  const pause = (e: MouseEvent<HTMLDivElement, globalThis.MouseEvent>) => {
     if (passRef.current) {
       passRef.current.style.animationPlayState = "paused";
     }

@@ -29,7 +29,8 @@ export const Showcase = () => {
       minH={["50vh", "70vh", "100vh", "100vh"]}
       w="100vw"
       position={"relative"}
-      bgGradient={"linear-gradient(primary 0%, tertiary 100%)"}
+      // bgGradient={"linear-gradient(my-pink 0%, my-violet 100%)"}
+      bgGradient={"linear-gradient(my-turquoise-dark 0%, my-pink 100%)"}
       display="flex"
       flexDirection={"column"}
       justifyContent={"center"}

@@ -1,17 +1,26 @@
 import { chakra } from "@chakra-ui/react";
 import { NextPage } from "next";
+import Head from "next/head";
+import { useTransition } from "react";
 import {
   About,
-  Home,
-  Showcase,
   Faq,
-  Banner,
+  Footer,
+  Home,
   Roadmap,
+  Showcase,
+  Team,
+  Banner,
 } from "./../components/sections";
 
 const Index: NextPage = () => {
+  const [isPending, startTransition] = useTransition();
   return (
     <>
+      <Head>
+        <title>DontGiveFuckBoi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Home />
       <chakra.main>
         <About />
@@ -19,7 +28,9 @@ const Index: NextPage = () => {
         <Banner />
         <Showcase />
         <Faq />
+        <Team />
       </chakra.main>
+      <Footer />
     </>
   );
 };

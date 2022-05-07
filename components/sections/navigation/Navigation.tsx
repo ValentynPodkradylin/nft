@@ -11,36 +11,9 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import React, { FC, useReducer, useState } from "react";
-import DarkModeSwitch, { IconColorMode } from "../DarkModeSwitch";
-import Logo from "./../Logo";
-
-type PathForSections<T> = T extends `${infer S}` ? `#${Lowercase<S>}` : never;
-
-export type SectionsName = "Home" | "About" | "Faq" | "Roadmap";
-
-type SectionsList<T extends SectionsName = SectionsName> = {
-  section: T;
-  path: PathForSections<T>;
-}[];
-
-export const sectionsList: SectionsList = [
-  {
-    section: "Home",
-    path: "#home",
-  },
-  {
-    section: "About",
-    path: "#about",
-  },
-  {
-    section: "Roadmap",
-    path: "#roadmap",
-  },
-  {
-    section: "Faq",
-    path: "#faq",
-  },
-];
+import DarkModeSwitch, { IconColorMode } from "../../DarkModeSwitch";
+import Logo from "../../Logo";
+import { sectionsList } from "./NavList";
 
 type MenuToggleProps = {
   toggle: () => void;
@@ -112,7 +85,7 @@ export const Navigation = () => {
               bg="transparent"
               aria-label="asxx"
               _hover={{
-                bg: "primary-dark",
+                bg: "my-pink-dark",
               }}
               icon={<HamburgerIcon />}
               onClick={() => changeDisplay("flex")}
@@ -124,7 +97,7 @@ export const Navigation = () => {
       <Flex
         w="100vw"
         display={display}
-        bgColor="primary"
+        bgColor="my-pink"
         zIndex={20}
         h="100vh"
         pos="fixed"
@@ -142,7 +115,7 @@ export const Navigation = () => {
             color={iconColor[colorMode]}
             bg="transparent"
             _hover={{
-              bg: "primary-dark",
+              bg: "my-pink-dark",
             }}
           />
         </Flex>

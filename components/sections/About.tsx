@@ -39,7 +39,7 @@ export const About = () => {
     <Box
       as="section"
       w="100vw"
-      bgGradient={"linear-gradient(secondary-dark 0%, primary 100%)"}
+      bgGradient={"linear-gradient(my-turquoise-dark 0%, my-pink 100%)"}
       id="about"
       py={"20px"}
     >
@@ -96,10 +96,13 @@ export const About = () => {
           </Text>
           <Spacer />
           <Button
+            as="a"
             display={["none", "none", "flex", "flex"]}
             zIndex={1}
             colorScheme={"facebook"}
             leftIcon={<FaDiscord />}
+            href="https://discord.com/invite/vjgXecqsVF"
+            target="_blank"
           >
             Our Discord
           </Button>

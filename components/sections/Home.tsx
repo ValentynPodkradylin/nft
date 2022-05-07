@@ -1,16 +1,16 @@
-import { Box, Center, Heading, Spacer, VStack } from "@chakra-ui/react";
-import { motion, MotionValue, useTransform } from "framer-motion";
+import { Box, Center, Heading, VStack } from "@chakra-ui/react";
 import React, { FC } from "react";
 import Typewriter from "typewriter-effect";
 import Carousel from "../carousel/Carousel";
-import { Navigation } from "./Navigation";
+import { Navigation } from "./navigation";
+import { motion } from "framer-motion";
 
 export const Home: FC = (props) => {
   return (
     <Box
       as={"header"}
       id="home"
-      bgGradient={"linear-gradient(primary 0%, secondary-dark 100%)"}
+      bgGradient={"linear-gradient(my-pink 0%, my-turquoise-dark 100%)"}
     >
       <Navigation />
       <Center
