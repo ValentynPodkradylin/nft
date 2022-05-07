@@ -9,13 +9,6 @@ const fonts = {
   ...chakraTheme.fonts,
   body: "Akaya Telivigala, cursive",
   heading: "Akaya Telivigala, cursive",
-  styles: {
-    global: {
-      body: {
-        color: "green",
-      },
-    },
-  },
 };
 
 const breakpoints = createBreakpoints({
@@ -28,21 +21,23 @@ const breakpoints = createBreakpoints({
 
 const semanticTokens = {
   colors: {
-    primary: {
+    "my-pink": {
       default: "#fab3ff",
       _dark: "gray.500",
     },
-    "primary-dark": "#c682cc",
-    "primary-light": "#ffe6ff",
-    secondary: {
+    "my-pink-dark": "#c682cc",
+    "my-pink-light": "#ffe6ff",
+    "my-turquoise": {
       default: "#b3fffa",
       _dark: "gray.500",
     },
-    "secondary-dark": "#81ccc7",
-    "secondary-light": "#e7ffff",
-    tertiary: "#cdb2ff",
-    "tertiary-dark": "#9b82cc",
-    "tertiary-light": "#ffe4ff",
+    "my-turquoise-dark": "#81ccc7",
+    "my-turquoise-light": "#e7ffff",
+    "my-violet": "#cdb2ff",
+    "my-violet-dark": "#9b82cc",
+    "my-violet-light": "#ffe4ff",
+    "my-green": "#d4ffb7",
+    "my-green-dark": "#a2cc87",
   },
 };
 
@@ -58,6 +53,8 @@ export const customTheme = extendTheme({
     global: {
       body: {
         color: "white",
+        body: "Akaya Telivigala, cursive",
+        heading: "Akaya Telivigala, cursive",
       },
     },
   },
