@@ -163,22 +163,12 @@ export const Banner = () => {
           />
           <Flex
             pos="absolute"
-            justifyContent={["space-between", "space-between"]}
+            justifyContent={"center"}
             alignItems="center"
             w="80%"
             h="80%"
-            flexDir={["column", "column", "row", "row"]}
             mx={"auto"}
           >
-            <Heading
-              as="h4"
-              textTransform={"capitalize"}
-              textAlign={["center"]}
-              fontSize={["4xl", "4xl", "5xl", "6xl"]}
-              w={["100%", "100%", "40%", "40%"]}
-            >
-              Join our whitepaper
-            </Heading>
             <Button
               as="a"
               size="lg"

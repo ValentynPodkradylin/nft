@@ -1,13 +1,13 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Box, chakra, Image } from "@chakra-ui/react";
-import { EffectCards, Navigation, Pagination, Autoplay } from "swiper";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import { motion } from "framer-motion";
+import React from "react";
+import { Autoplay, EffectCards } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-cards";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { imgsJPG, imgsWEBP } from "./images";
-import { motion } from "framer-motion";
 
 const anim = {
   hidden: {
@@ -38,8 +38,8 @@ const Carousel = () => {
           observeParents={true}
           effect="cards"
           grabCursor={true}
-          modules={[EffectCards, Pagination, Navigation, Autoplay]}
-          className="mySwiper"
+          modules={[EffectCards, Autoplay]}
+          className="mySwiperCard"
           scrollbar={{
             draggable: true,
           }}

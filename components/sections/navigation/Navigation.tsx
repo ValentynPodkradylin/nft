@@ -66,7 +66,7 @@ export const Navigation = () => {
           justifyContent={"space-between"}
         >
           <Logo />
-          <Wrap spacing={10} display={["none", "none", "flex", "flex"]}>
+          <Wrap spacing={10} display={["none", "none", "none", "flex"]}>
             {sectionsList.map(({ section, path }) => (
               <WrapItem
                 display={"block"}
@@ -89,7 +89,7 @@ export const Navigation = () => {
               }}
               icon={<HamburgerIcon />}
               onClick={() => changeDisplay("flex")}
-              display={["flex", "flex", "none", "none"]}
+              display={["flex", "flex", "flex", "none"]}
             />
           </Flex>
         </Flex>

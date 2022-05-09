@@ -79,7 +79,7 @@ export const Roadmap = () => {
           gap="20px"
         >
           <RoadmapStep
-            custom={4}
+            custom={1}
             anim={toRight}
             bg="my-turquoise-dark"
             alignSelf="flex-start"

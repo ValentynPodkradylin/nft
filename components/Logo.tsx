@@ -4,6 +4,7 @@ import {
   Image,
   keyframes,
   useColorModeValue,
+  Flex,
 } from "@chakra-ui/react";
 import React, { FC } from "react";
 import head from "./../images/head2.png";
@@ -25,47 +26,52 @@ const Logo: FC<LogoProps> = (props) => {
   );
 
   return (
-    <Heading
-      as="h1"
-      position={"relative"}
-      zIndex={size === "big" ? 1000 : 0}
-      fontSize={
-        size === "big"
-          ? ["2xl", "3xl", "4xl", "5xl"]
-          : ["xl", "xl", "2xl", "2xl"]
-      }
-      transition="all .1s ease"
-      fontFamily={'"Akaya Telivigala", cursive'}
-      display={"flex"}
-      cursor="pointer"
-      _hover={{
-        transform: "scale(1.1)",
-      }}
-      textShadow={textShadow}
-      onClick={() => {
-        let element = document.getElementById("home");
-
-        element?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-        });
-      }}
-    >
-      DontGiveFuckBoi
+    <Flex alignItems={"center"} justifyContent="center" gap={0.5}>
       <Image
-        display={["none", "none ", "flex", "flex"]}
-        position={"absolute"}
-        top={size === "big" ? "-20%" : "-15%"}
-        left={size === "big" ? "-12%" : "-25%"}
+        display={["flex", "flex ", "flex", "flex"]}
         src={head.src}
-        transform={"translateY(-50%)"}
-        alt="1"
-        h="50px"
-        w="50px"
+        alt="logo"
+        h={
+          size === "big"
+            ? ["40px", "40px", "50px", "70px"]
+            : ["30px", "30px", "40px", "50px"]
+        }
+        w={
+          size === "big"
+            ? ["40px", "40px", "50px", "70px"]
+            : ["30px", "30px", "40px", "50px"]
+        }
         animation={`${spinRight} infinite 5s linear`}
       />
-    </Heading>
+      <Heading
+        as="h1"
+        zIndex={size === "big" ? 1000 : 0}
+        fontSize={
+          size === "big"
+            ? ["2xl", "3xl", "3xl", "4xl"]
+            : ["xl", "xl", "2xl", "2xl"]
+        }
+        transition="all .1s ease"
+        fontFamily={'"Akaya Telivigala", cursive'}
+        display={"flex"}
+        cursor="pointer"
+        _hover={{
+          transform: "scale(1.1)",
+        }}
+        textShadow={textShadow}
+        onClick={() => {
+          let element = document.getElementById("home");
+
+          element?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest",
+          });
+        }}
+      >
+        DontGiveFuckBoi
+      </Heading>
+    </Flex>
   );
 };
 

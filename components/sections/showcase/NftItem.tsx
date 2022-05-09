@@ -1,13 +1,5 @@
-import { Box, Image } from "@chakra-ui/react";
-import {
-  RefObject,
-  FC,
-  MouseEvent,
-  useRef,
-  useEffect,
-  useState,
-  useMemo,
-} from "react";
+import { Box, Image, keyframes } from "@chakra-ui/react";
+import { FC, MouseEvent, RefObject, useMemo, useRef } from "react";
 import { useHover } from "../../../hooks";
 import { Tiers } from "./imgs";
 
@@ -31,7 +23,7 @@ export const NftItem: FC<NftItemProps> = (props) => {
       case "lil boi":
         return "0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 2px #9b82cc, 0 0 2px #9b82cc, 0 0 2px #9b82cc, 0 0 5px #9b82cc, 0 0 15px #9b82cc";
     }
-  }, []);
+  }, [name]);
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -51,12 +43,12 @@ export const NftItem: FC<NftItemProps> = (props) => {
   return (
     <Box
       ref={ref}
-      onMouseOver={pause}
-      onMouseOut={play}
+      // onMouseOver={pause}
+      // onMouseOut={play}
       position={"relative"}
-      mx="auto"
-      transform={isHover ? "scale(1.1)" : "scale(1)"}
-      transition="all .1s ease"
+      // mx="auto"
+      // transform={isHover ? "scale(1.1)" : "scale(1)"}
+      // transition="all .1s ease"
       w={["8rem", "10rem", "15rem", "15rem"]}
     >
       <Image

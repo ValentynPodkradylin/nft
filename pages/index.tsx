@@ -19,7 +19,10 @@ const Index: NextPage = () => {
     <>
       <Head>
         <title>DontGiveFuckBoi</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+        />
       </Head>
       <Home />
       <chakra.main>

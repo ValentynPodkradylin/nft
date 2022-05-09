@@ -47,7 +47,7 @@ export const About = () => {
         alignItems={"center"}
         justifyContent={["center", "center", "space-between", "space-between"]}
         minH={"100vh"}
-        w="75%"
+        w="85%"
         mx="auto"
         gap="20px"
         flexDir={["column-reverse", "column-reverse", "row", "row"]}
@@ -67,6 +67,9 @@ export const About = () => {
             />
           </motion.div>
           <Button
+            as="a"
+            href="https://discord.gg/vjgXecqsVF"
+            target="_blank"
             display={["flex", "flex", "none", "none"]}
             zIndex={1}
             colorScheme={"facebook"}

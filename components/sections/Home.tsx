@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 export const Home: FC = (props) => {
   return (
     <Box
+      w="100vw"
       as={"header"}
       id="home"
       bgGradient={"linear-gradient(my-pink 0%, my-turquoise-dark 100%)"}
@@ -15,7 +16,7 @@ export const Home: FC = (props) => {
       <Navigation />
       <Center
         pt="90px"
-        w="75%"
+        w="85%"
         flexDir={["column", "column", "row", "row"]}
         justifyContent={["center", "center", "space-between", "space-between"]}
         mx="auto"
@@ -23,6 +24,7 @@ export const Home: FC = (props) => {
         gap={["20px", "20px", 0, 0]}
       >
         <VStack
+          w={["100%", "100%", "40%", "50%"]}
           spacing={5}
           alignItems={["center", "center", "flex-start", "flex-start"]}
         >

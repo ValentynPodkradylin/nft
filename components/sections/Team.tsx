@@ -18,29 +18,33 @@ type TeamMember = {
   name: string;
   role: string;
   textShadow: string;
+  order?: number[];
 };
 
 const teamMember: TeamMember[] = [
   {
     src: tm1.src,
     name: "Massive",
-    role: "CO-Founded and CMO",
+    role: "CO-Founder and CMO",
     textShadow:
       "0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 2px #9b82cc, 0 0 2px #9b82cc, 0 0 2px #9b82cc, 0 0 1px #9b82cc, 0 0 5px #9b82cc",
+    order: [3, 3, 1, 1],
   },
   {
     src: tm2.src,
     name: "Sasha",
-    role: "CO-Founded and CTO",
+    role: "CO-Founder and CTO",
     textShadow:
       "0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 2px #ff00de, 0 0 2px #ff00de, 0 0 2px #ff00de, 0 0 1px #ff00de, 0 0 5px #ff00de",
+    order: [1, 1, 2, 2],
   },
   {
     src: tm3.src,
     name: "John",
-    role: "CO-Founded and COO",
+    role: "CO-Founder and COO",
     textShadow:
       "0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 2px #ffffff, 0 0 2px #81ccc7, 0 0 2px #81ccc7, 0 0 2px #81ccc7, 0 0 1px #81ccc7, 0 0 5px #81ccc7",
+    order: [2, 2, 3, 3],
   },
 ];
 
@@ -86,7 +90,7 @@ export const Team: FC<Team> = (props) => {
           mt="50px"
           gap={["50px", "50px", "20px", "20px"]}
         >
-          {teamMember.map(({ name, src, role, textShadow }) => (
+          {teamMember.map(({ name, src, role, textShadow, order }) => (
             <Box
               key={name}
               role={"group"}
@@ -99,6 +103,7 @@ export const Team: FC<Team> = (props) => {
               pos={"relative"}
               bg="my-violet-dark"
               zIndex={1}
+              order={order}
             >
               <Box
                 rounded={"3xl"}
