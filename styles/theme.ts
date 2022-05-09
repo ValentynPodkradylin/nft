@@ -7,8 +7,8 @@ import { createBreakpoints } from "@chakra-ui/theme-tools";
 
 const fonts = {
   ...chakraTheme.fonts,
-  body: "Akaya Telivigala, cursive",
-  heading: "Akaya Telivigala, cursive",
+  body: "'Akaya Telivigala', cursive",
+  heading: "'Akaya Telivigala', cursive",
 };
 
 const breakpoints = createBreakpoints({
@@ -53,8 +53,8 @@ export const customTheme = extendTheme({
     global: {
       body: {
         color: "white",
-        body: "Akaya Telivigala, cursive",
-        heading: "Akaya Telivigala, cursive",
+        body: "'Akaya Telivigala', cursive",
+        heading: "'Akaya Telivigala', cursive",
       },
     },
   },

@@ -114,8 +114,6 @@ const pagesImg = [
   page10,
   page11,
   page12,
-  page13,
-  page14,
 ];
 
 const anim = keyframes`
@@ -133,13 +131,21 @@ export const Banner = () => {
     <Box>
       {isLargerThanLg ? (
         <Box
-          h="100vh"
+          minH="100vh"
           bgGradient="linear-gradient(my-violet-dark 0%, my-turquoise-dark 100%)"
         >
-          <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+          <Swiper
+            navigation={true}
+            modules={[Navigation]}
+            className="mySwiperWhitpaper"
+          >
             {pagesImg.map((pageImg, index) => (
               <SwiperSlide key={pageImg.src}>
-                <Image src={pageImg.src} alt={`whitepaper-page-${index}`} />
+                <Image
+                  objectFit={"cover"}
+                  src={pageImg.src}
+                  alt={`whitepaper-page-${index}`}
+                />
               </SwiperSlide>
             ))}
           </Swiper>

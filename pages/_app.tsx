@@ -1,4 +1,6 @@
-import "@fontsource/sora";
+import "@fontsource/sora/400.css";
+import "@fontsource/sora/700.css";
+import "@fontsource/sora/500.css";
 import "@fontsource/sedgwick-ave-display";
 import "./../styles/global.css";
 import type { AppProps } from "next/app";
