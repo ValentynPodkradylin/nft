@@ -1,10 +1,4 @@
-import NextDocument, {
-  Html,
-  Head,
-  Main,
-  NextScript,
-  DocumentContext,
-} from "next/document";
+import NextDocument, { Head, Html, Main, NextScript } from "next/document";
 import Favicon from "../components/Favicon";
 
 export default class Document extends NextDocument {
