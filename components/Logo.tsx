@@ -1,13 +1,12 @@
 import {
+  Flex,
   Heading,
-  useColorMode,
   Image,
   keyframes,
   useColorModeValue,
-  Flex,
 } from "@chakra-ui/react";
 import React, { FC } from "react";
-import head from "./../images/head2.png";
+import head from "./../images/headLogo.png";
 
 const spinRight = keyframes`
   from {transform: rotate(0deg);}
@@ -69,7 +68,7 @@ const Logo: FC<LogoProps> = (props) => {
           });
         }}
       >
-        DontGiveFuckBoi
+        DontGiveaFuckBois
       </Heading>
     </Flex>
   );
