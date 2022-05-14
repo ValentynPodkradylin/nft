@@ -1,0 +1,40 @@
+{
+  "home": {
+    "mainTitle": "Discover new area of cool",
+    "typewritter": {
+      "fLine": "NFT's",
+      "sLine": "Collectible Items",
+      "tLine": "Something new"
+    }
+  },
+  "about": {
+    "sectionName": "About",
+    "paragraphs": [
+      "Our project began with a funny children's photo of our COO John, who comes from the faraway country of Uzbekistan. This colorful photo, in spite of its simplicity, took on a very deep meaning for us.",
+      "The fact is that John unfortunately had a difficult childhood. His tyrant father sent him to a religious school where he was beaten and harassed by a teacher. Telling or complaining to his parents was not possible, as little John faced a wall of incomprehension on their part. By the way, a total lack of understanding haunted him later in life because of the mismatch between his liberal, progressive views and the religious, conservative beliefs of his environment and society.",
+      "As we can see in the photo, already at such a young age John didn't give a fuck about judgment and demotivation from others. This is exactly the attitude we spread in our project and try to put it into the souls of the members of our community, because it gave John a lot.",
+      "Contrary to the opinion of his parents and friends, he did what he wanted to do for a long time, he moved to Germany to study and he is doing what he really likes, namely the DGFB project, in which he sees himself as an expression. We want to help people in need of support and motivation."
+    ]
+  },
+  "roadmap": {
+    "sectionName": "Roadmap",
+    "steps": [
+      {
+        "stepsTitle": "DFGB FIRST COLLECTION (2D)",
+        "stepText": "We'll first launch our Social Media, then Discord and Website. Partneships & Collab, announcements, contests and giveways. Mint + Listing in marketplaces. After Mints we`ll transfer the 20% of the funds earned to Ukrainian Children in need"
+      },
+      {
+        "stepsTitle": "DFGB$ CRYPTO LAUNCH",
+        "stepText": "This will be one of our biggest milestone in DFGB history. We`ll make a DAO followed by our own crypto-coin launch. Holders who staked our NFT will be rewarder with DGFB$ according to the duration of their stalking."
+      },
+      {
+        "stepsTitle": "3D ANIMATED COLLECTION",
+        "stepText": "We'll drop a DFGB 3D animated collection that with lots of utilities with go from staking reward to... playing our P2P Game in the Metaverse!! More about this on Q2"
+      },
+      {
+        "stepsTitle": "P2E GAME LAUNCH",
+        "stepText": "Could you imagine having a great time while earning money? This is what our web3 game goes about. A game where you`ll have to use your own abilities to beat the others asses up and get rewards! (Using 3D animated NFTs from our 2nd collection)."
+      }
+    ]
+  }
+}

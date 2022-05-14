@@ -1,11 +1,27 @@
-import { Box, Center, Heading, VStack } from "@chakra-ui/react";
+import { Box, Center, Heading, Stack, VStack } from "@chakra-ui/react";
 import React, { FC } from "react";
 import Typewriter from "typewriter-effect";
 import Carousel from "../carousel/Carousel";
 import { Navigation } from "./navigation";
 import { motion } from "framer-motion";
+import { SocialButton } from "../SocialButton";
+import { FaTwitter, FaInstagram, FaTiktok, FaDiscord } from "react-icons/fa";
 
-export const Home: FC = (props) => {
+interface HomeProps {
+  text: {
+    mainTitle: string;
+    typewritter: {
+      fLine: string;
+      sLine: string;
+      tLine: string;
+    };
+  };
+}
+
+export const Home = (props: HomeProps) => {
+  const { text } = props;
+  const title = text?.mainTitle;
+  const { fLine, sLine, tLine } = text?.typewritter;
   return (
     <Box
       w="100vw"
@@ -34,7 +50,7 @@ export const Home: FC = (props) => {
             fontSize={["3xl", "3xl", "4xl", "5xl"]}
             w={["100%", "100%", "80%", "80%"]}
           >
-            Discover new area of cool
+            {title}
           </Heading>
           <Heading as="h2" fontSize={"4xl"}>
             <Typewriter
@@ -46,26 +62,49 @@ export const Home: FC = (props) => {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    "<span style='text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de;' }>NFT's.</span>"
+                    `<span style='text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de;' }>${fLine}</span>`
                   )
                   .pauseFor(2000)
                   .deleteAll()
                   .typeString(
-                    "<span style='text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00ff00, 0 0 10px #00ff00, 0 0 10px #00ff00, 0 0 10px #00ff00, 0 0 10px #00ff00' }>Collectible Items.</span>"
+                    `<span style='text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00ff00, 0 0 10px #00ff00, 0 0 10px #00ff00, 0 0 10px #00ff00, 0 0 10px #00ff00' }>${sLine}</span>`
                   )
                   .pauseFor(2000)
                   .deleteAll()
                   .typeString(
-                    "<span style='text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff' }>Collectible Items.</span>"
+                    `<span style='text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff' }>${tLine}</span>`
                   )
                   .deleteAll()
                   .start();
               }}
             />
           </Heading>
-          <Heading as="h3" fontSize={"3xl"}>
-            Lorem
-          </Heading>
+          <Stack direction={"row"} spacing={6}>
+            <SocialButton
+              label={"Twitter"}
+              href={"https://twitter.com/dontgivefuckboi"}
+            >
+              <FaTwitter />
+            </SocialButton>
+            <SocialButton
+              label={"Instagram"}
+              href={"https://www.instagram.com/dontgivefuckboii/"}
+            >
+              <FaInstagram />
+            </SocialButton>
+            <SocialButton
+              label={"Tiktok"}
+              href={"https://www.tiktok.com/@dontgivefuckboi?lang=es"}
+            >
+              <FaTiktok />
+            </SocialButton>
+            <SocialButton
+              label={"Discord"}
+              href={"https://discord.com/invite/vjgXecqsVF"}
+            >
+              <FaDiscord />
+            </SocialButton>
+          </Stack>
         </VStack>
         <Box>
           <Carousel />

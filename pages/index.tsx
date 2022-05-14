@@ -1,20 +1,24 @@
 import { chakra } from "@chakra-ui/react";
-import { NextPage } from "next";
+import { NextPage, GetStaticProps } from "next";
 import Head from "next/head";
-import { useTransition } from "react";
+import { useEffect, useTransition } from "react";
 import {
   About,
+  Banner,
   Faq,
   Footer,
   Home,
   Roadmap,
   Showcase,
   Team,
-  Banner,
 } from "./../components/sections";
+import data from "./../data.json";
+
+type Props = {
+  [key: string]: any;
+};
 
 const Index: NextPage = () => {
-  const [isPending, startTransition] = useTransition();
   return (
     <>
       <Head>
@@ -24,10 +28,10 @@ const Index: NextPage = () => {
           content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
         />
       </Head>
-      <Home />
+      <Home text={data.home} />
       <chakra.main>
-        <About />
-        <Roadmap />
+        <About text={data.about} />
+        <Roadmap text={data.roadmap} />
         <Banner />
         <Showcase />
         <Faq />
@@ -39,3 +43,14 @@ const Index: NextPage = () => {
 };
 
 export default Index;
+
+// export const getStaticProps: GetStaticProps = async (context) => {
+//   const res = await fetch("../data.json");
+//   const data = await res.json();
+
+//   return {
+//     props: {
+//       data,
+//     },
+//   };
+// };

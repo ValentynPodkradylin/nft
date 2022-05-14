@@ -38,7 +38,20 @@ const toLeft: Variants = {
   }),
 };
 
-export const Roadmap = () => {
+interface RoadmapProps {
+  text: {
+    sectionName: string;
+    steps: {
+      stepsTitle: string;
+      stepsText: string;
+    }[];
+  };
+}
+
+export const Roadmap = (props: RoadmapProps) => {
+  const { text } = props;
+  const { sectionName, steps } = text;
+
   const textShadow = useColorModeValue(
     " 0 0 5px #fff000, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de, 0 0 10px #ff00de;",
     " 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff, 0 0 10px #0000ff"
@@ -69,7 +82,7 @@ export const Roadmap = () => {
           fontFamily={'"Sedgwick Ave Display", cursive'}
           textShadow={textShadow}
         >
-          Roadmap
+          {sectionName}
         </Heading>
         <Flex
           justifyContent={"center"}
