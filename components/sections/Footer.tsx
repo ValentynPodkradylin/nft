@@ -10,7 +10,13 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaDiscord,
+  FaInstagram,
+  FaTiktok,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 import { ReactNode } from "react";
 import { sectionsList } from "./navigation";
 import Logo from "../Logo";
@@ -116,6 +122,12 @@ export const Footer = () => {
               href={"https://www.tiktok.com/@dontgivefuckboi?lang=es"}
             >
               <FaTiktok />
+            </SocialButton>
+            <SocialButton
+              label={"Discord"}
+              href={"https://discord.com/invite/vjgXecqsVF"}
+            >
+              <FaDiscord />
             </SocialButton>
           </Stack>
         </Container>
