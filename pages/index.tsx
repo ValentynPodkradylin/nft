@@ -1,7 +1,7 @@
 import { chakra } from "@chakra-ui/react";
-import { NextPage, GetStaticProps } from "next";
+import { NextPage } from "next";
 import Head from "next/head";
-import { useEffect, useTransition } from "react";
+import Favicon from "../components/Favicon";
 import {
   About,
   Banner,
@@ -23,6 +23,7 @@ const Index: NextPage = () => {
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
         />
+        <Favicon />
       </Head>
       <Home text={data.home} />
       <chakra.main>
@@ -30,8 +31,8 @@ const Index: NextPage = () => {
         <Roadmap text={data.roadmap} />
         <Banner />
         <Showcase />
-        <Faq />
-        <Team />
+        <Faq text={data.faq} />
+        <Team text={data.team} />
       </chakra.main>
       <Footer />
     </>
@@ -39,14 +40,3 @@ const Index: NextPage = () => {
 };
 
 export default Index;
-
-// export const getStaticProps: GetStaticProps = async (context) => {
-//   const res = await fetch("../data.json");
-//   const data = await res.json();
-
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// };

@@ -28,7 +28,6 @@ const container = {
 
 interface AboutProps {
   text: {
-    sectionName: string;
     paragraphs: string[];
   };
 }
@@ -40,7 +39,7 @@ export const About = (props: AboutProps) => {
   );
 
   const { text } = props;
-  const { sectionName, paragraphs } = text;
+  const { paragraphs } = text;
 
   return (
     <Box
@@ -86,7 +85,7 @@ export const About = (props: AboutProps) => {
             textShadow={textShadow}
             textAlign="center"
           >
-            {sectionName}
+            About
           </Heading>
           {paragraphs.map((paragraph, index) => (
             <Text key={index.toString()}>{paragraph}</Text>

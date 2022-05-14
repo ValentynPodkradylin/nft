@@ -8,7 +8,6 @@
     }
   },
   "about": {
-    "sectionName": "About",
     "paragraphs": [
       "Our project began with a funny children's photo of our COO John, who comes from the faraway country of Uzbekistan. This colorful photo, in spite of its simplicity, took on a very deep meaning for us.",
       "The fact is that John unfortunately had a difficult childhood. His tyrant father sent him to a religious school where he was beaten and harassed by a teacher. Telling or complaining to his parents was not possible, as little John faced a wall of incomprehension on their part. By the way, a total lack of understanding haunted him later in life because of the mismatch between his liberal, progressive views and the religious, conservative beliefs of his environment and society.",
@@ -17,7 +16,6 @@
     ]
   },
   "roadmap": {
-    "sectionName": "Roadmap",
     "steps": [
       {
         "stepTitle": "DFGB FIRST COLLECTION (2D)",
@@ -36,5 +34,45 @@
         "stepText": "Could you imagine having a great time while earning money? This is what our web3 game goes about. A game where you`ll have to use your own abilities to beat the others asses up and get rewards! (Using 3D animated NFTs from our 2nd collection)."
       }
     ]
-  }
+  },
+  "team": [
+    {
+      "name": "MASSIVE",
+      "role": "CO-Founder and CMO"
+    },
+    {
+      "name": "SASHA",
+      "role": "CO-Founder and CTO"
+    },
+    {
+      "name": "JOHN",
+      "role": "CO-Founder and COO"
+    }
+  ],
+  "faq": [
+    {
+      "accordionTitle": "Section 1",
+      "accordionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "accordionTitle": "Section 2",
+      "accordionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "accordionTitle": "Section 3",
+      "accordionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "accordionTitle": "Section 4",
+      "accordionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "accordionTitle": "Section 5",
+      "accordionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+      "accordionTitle": "Section 6",
+      "accordionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ]
 }
