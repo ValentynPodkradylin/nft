@@ -14,10 +14,6 @@ import {
 } from "./../components/sections";
 import data from "./../data.json";
 
-type Props = {
-  [key: string]: any;
-};
-
 const Index: NextPage = () => {
   return (
     <>

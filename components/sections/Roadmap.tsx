@@ -42,8 +42,8 @@ interface RoadmapProps {
   text: {
     sectionName: string;
     steps: {
-      stepsTitle: string;
-      stepsText: string;
+      stepTitle: string;
+      stepText: string;
     }[];
   };
 }
@@ -96,8 +96,8 @@ export const Roadmap = (props: RoadmapProps) => {
             anim={toRight}
             bg="my-turquoise-dark"
             alignSelf="flex-start"
-            title="dfgb first collection (2d)"
-            text="We'll first launch our Social Media, then Discord and Website. Partneships &amp; Collab, announcements, contests and giveways. Mint + Listing in marketplaces. After Mints we`ll transfer the 20% of the funds earned to Ukrainian Children in need  "
+            title={steps[0].stepTitle}
+            text={steps[0].stepTitle}
           />
           <RoadmapStep
             custom={2}
