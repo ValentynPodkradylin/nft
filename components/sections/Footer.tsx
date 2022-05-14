@@ -61,7 +61,7 @@ export const Footer = () => {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>© 2022 DontGiveFuckBoi. All rights reserved</Text>
+          <Text>© 2022 DontGiveaFuckBois. All rights reserved</Text>
           <Stack direction={"row"} spacing={6}>
             <SocialButton
               label={"Twitter"}
