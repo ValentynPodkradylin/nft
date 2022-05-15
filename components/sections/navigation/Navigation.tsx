@@ -15,21 +15,7 @@ import DarkModeSwitch, { IconColorMode } from "../../DarkModeSwitch";
 import Logo from "../../Logo";
 import { sectionsList } from "./NavList";
 
-type MenuToggleProps = {
-  toggle: () => void;
-  isOpen: boolean;
-};
-
-const MenuToggle: FC<MenuToggleProps> = ({ toggle, isOpen }) => {
-  return (
-    <Box display={{ base: "block", md: "none" }} onClick={toggle}>
-      {isOpen ? <CloseIcon /> : <MenuIcon />}
-    </Box>
-  );
-};
-
 export const Navigation = () => {
-  const [isOpen, toggleOpen] = useReducer((isOpen) => !isOpen, false);
   const [display, changeDisplay] = useState("none");
   const { colorMode } = useColorMode();
   const iconColor: IconColorMode = {

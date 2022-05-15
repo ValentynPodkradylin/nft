@@ -26,8 +26,8 @@ const Carousel = () => {
       <Box
         as={motion.div}
         variants={anim}
-        w={["60vw", "50vw", "25vw", "25vw"]}
-        h={["40vh", "60vh", "75vh", "75vh"]}
+        w={["60vw", "50vw", "30vw", "30vw"]}
+        h={["40vh", "75vh", "75vh", "75vh"]}
       >
         <ChakraSwiper
           autoplay={{

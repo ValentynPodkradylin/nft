@@ -57,28 +57,21 @@ export const Team = (props: Team) => {
           justifyContent={["space-between", "space-between"]}
           flexDir={["column", "column", "row", "row"]}
           mt="50px"
-          gap={["50px", "50px", "20px", "20px"]}
+          gap={"50px"}
         >
           <TeamCard
             name={text[0].name}
             role={text[0].role}
-            src={tm1.src}
-            textShadow={cardShadow1}
-            order={[3, 3, 1, 1]}
+            src={tm2.src}
+            textShadow={cardShadow2}
+            // order={[1, 1, 2, 2]}
           />
           <TeamCard
             name={text[1].name}
             role={text[1].role}
-            src={tm2.src}
-            textShadow={cardShadow2}
-            order={[1, 1, 2, 2]}
-          />
-          <TeamCard
-            name={text[2].name}
-            role={text[2].role}
             src={tm3.src}
             textShadow={cardShadow3}
-            order={[2, 2, 3, 3]}
+            // order={[2, 2, 3, 3]}
           />
         </Flex>
       </Flex>

@@ -1,6 +1,12 @@
 type PathForSections<T> = T extends `${infer S}` ? `#${Lowercase<S>}` : never;
 
-export type SectionsName = "Home" | "About" | "Faq" | "Roadmap" | "Team";
+export type SectionsName =
+  | "Home"
+  | "About"
+  | "Faq"
+  | "Roadmap"
+  | "Whitepaper"
+  | "Team";
 
 export type SectionsList<T extends SectionsName = SectionsName> = {
   section: T;
@@ -19,6 +25,10 @@ export const sectionsList: SectionsList = [
   {
     section: "Roadmap",
     path: "#roadmap",
+  },
+  {
+    section: "Whitepaper",
+    path: "#whitepaper",
   },
   {
     section: "Faq",

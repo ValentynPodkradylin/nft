@@ -3,7 +3,7 @@ import { Box, Heading, Stack, Image, Text } from "@chakra-ui/react";
 interface TeamCardPops {
   name: string;
   role: string;
-  order: number[];
+  order?: number[];
   src: string;
   textShadow: string;
 }

@@ -34,13 +34,13 @@ export const Home = (props: HomeProps) => {
         pt="90px"
         w="85%"
         flexDir={["column", "column", "row", "row"]}
-        justifyContent={["center", "center", "space-between", "space-between"]}
         mx="auto"
         minH={"100vh"}
-        gap={["20px", "20px", 0, 0]}
+        gap={"20px"}
+        justifyContent="flex-start"
       >
         <VStack
-          w={["100%", "100%", "40%", "50%"]}
+          w={"100%"}
           spacing={5}
           alignItems={["center", "center", "flex-start", "flex-start"]}
         >
@@ -106,7 +106,11 @@ export const Home = (props: HomeProps) => {
             </SocialButton>
           </Stack>
         </VStack>
-        <Box>
+        <Box
+          flexGrow={2}
+          display="flex"
+          justifyContent={["center", "flex-end"]}
+        >
           <Carousel />
         </Box>
       </Center>

@@ -1,10 +1,10 @@
 {
   "home": {
-    "mainTitle": "Discover new area of cool",
+    "mainTitle": "Not your regular NFT collection",
     "typewritter": {
-      "fLine": "NFT's",
-      "sLine": "Collectible Items",
-      "tLine": "Something new"
+      "fLine": "We don't give a fuck!",
+      "sLine": "We don't give up!",
+      "tLine": "To the moon together!"
     }
   },
   "about": {
@@ -41,16 +41,12 @@
   },
   "team": [
     {
-      "name": "MASSIVE",
-      "role": "CO-Founder and CMO"
-    },
-    {
       "name": "SASHA",
-      "role": "CO-Founder and CTO"
+      "role": "Co-Founder and CTO"
     },
     {
       "name": "JOHN",
-      "role": "CO-Founder and COO"
+      "role": "Co-Founder and COO"
     }
   ],
   "faq": [

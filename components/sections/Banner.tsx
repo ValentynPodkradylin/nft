@@ -1,76 +1,3 @@
-// import {
-//   Button,
-//   Center,
-//   Flex,
-//   Heading,
-//   Image,
-//   keyframes,
-// } from "@chakra-ui/react";
-// import React from "react";
-// import bg from "./../../images/bg.jpg";
-
-// const anim = keyframes`
-//   0%, 100% {
-//     box-shadow: 1px 0px 19px 4px rgba(0, 130, 196, 0.7), inset 0px 0px 10px rgba(255, 255, 255, 0.5); }
-
-//   50% {
-//     box-shadow: 0px 0px 0px 0px rgba(0, 130, 196, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
-
-// `;
-
-// export const Banner = () => {
-//   return (
-//     <Center
-//       overflow={"hidden"}
-//       as="section"
-//       w="100vw"
-//       h={["15rem", "15rem", "25rem", "25rem"]}
-//       bg="my-violet-dark"
-//       position={"relative"}
-//     >
-//       <Image
-//         alt="bg-image"
-//         src={bg.src}
-//         w="100%"
-//         h="100%"
-//         objectFit={"cover"}
-//         opacity=".3"
-//       />
-//       <Flex
-//         pos="absolute"
-//         justifyContent={["space-between", "space-between"]}
-//         alignItems="center"
-//         w="80%"
-//         h="80%"
-//         flexDir={["column", "column", "row", "row"]}
-//         mx={"auto"}
-//       >
-//         <Heading
-//           as="h4"
-//           textTransform={"capitalize"}
-//           textAlign={["center"]}
-//           fontSize={["4xl", "4xl", "5xl", "6xl"]}
-//           w={["100%", "100%", "40%", "40%"]}
-//         >
-//           Join our whitepaper
-//         </Heading>
-//         <Button
-//           as="a"
-//           size="lg"
-//           py="30px"
-//           px="50px"
-//           target={"_blank"}
-//           colorScheme={"whatsapp"}
-//           textTransform={"uppercase"}
-//           animation={`${anim} 2s infinite`}
-//           href="https://www.canva.com/design/DAE_K8f96lI/vVhSOm-iNZ53SqHQOeMJVg/view?utm_content=DAE_K8f96lI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-//         >
-//           whitepaper
-//         </Button>
-//       </Flex>
-//     </Center>
-//   );
-// };
 import {
   Box,
   Button,
@@ -82,12 +9,9 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
-// import required modules
 import { Navigation } from "swiper";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import page10 from "./../../images/whitelist/10.png";
 import page11 from "./../../images/whitelist/11.png";
@@ -128,7 +52,7 @@ const anim = keyframes`
 export const Banner = () => {
   const [isLargerThanLg] = useMediaQuery("(min-width: 760px)");
   return (
-    <Box>
+    <Box id="whitepaper">
       {isLargerThanLg ? (
         <Box
           minH="100vh"
