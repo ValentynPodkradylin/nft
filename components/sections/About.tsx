@@ -1,3 +1,4 @@
+//
 import {
   Box,
   Center,
@@ -49,52 +50,71 @@ export const About = (props: AboutProps) => {
       id="about"
       py={"20px"}
     >
-      <Flex
-        alignItems={"center"}
-        justifyContent={["center", "center", "space-between", "space-between"]}
-        minH={"100vh"}
-        w="85%"
-        mx="auto"
-        gap="25px"
-        flexDir={["column-reverse", "column-reverse", "row", "row"]}
-      >
-        <Center
-          flexDirection={"column"}
-          gap="20px"
-          h="75%"
-          w={["80%", "80%", "30%", "30%"]}
+      <Flex w="85%" mx="auto" minH={"100vh"} flexDir="column">
+        <Heading
+          fontFamily={'"Sedgwick Ave Display", cursive'}
+          as="h3"
+          fontSize={"5xl"}
+          textShadow={textShadow}
+          textAlign="center"
         >
-          <motion.div initial="hidden" animate="visible" variants={container}>
+          About
+        </Heading>
+        <Box
+          mt="25px"
+          flexDir={["column", "column", "unset", "unset"]}
+          display={["flex", "flex", "block", "block"]}
+        >
+          <Box
+            as={motion.div}
+            initial="hidden"
+            animate="visible"
+            variants={container}
+            h={["100%", "80%", "40%", "40%"]}
+            w={["100%", "80%", "40%", "40%"]}
+            float={["none", "none", "left", "left"]}
+            mr={["auto", "auto", "20px", "20px"]}
+            ml={["auto", "auto", "0px", "0px"]}
+            mb="20px"
+            order={[2, 2, "unset", "unset"]}
+          >
             <Image
               borderRadius={"20px"}
               src={photo.src}
               alt="discord"
               h="100%"
+              objectFit={"cover"}
+              w="100%"
             />
-          </motion.div>
-        </Center>
-        <VStack
-          alignItems={["center", "center"]}
-          w={["80%", "80%", "70%", "70%"]}
-          spacing={5}
-        >
-          <Heading
-            fontFamily={'"Sedgwick Ave Display", cursive'}
-            as="h3"
-            fontSize={"5xl"}
-            textShadow={textShadow}
-            textAlign="center"
-          >
-            About
-          </Heading>
-          {paragraphs.map((paragraph, index) => (
-            <Text key={index.toString()}>{paragraph}</Text>
-          ))}
-        </VStack>
+          </Box>
+
+          <Box order={[1, 1, "unset", "unset"]}>
+            {paragraphs.map((paragraph, index) => (
+              <Text key={index.toString()} mb="15px">
+                {paragraph}
+              </Text>
+            ))}
+          </Box>
+        </Box>
       </Flex>
     </Box>
   );
 };
+
 {
-  /* <Image src={discord.src} alt="discord" />; */
+  /* <Heading
+  fontFamily={'"Sedgwick Ave Display", cursive'}
+  as="h3"
+  fontSize={"5xl"}
+  textShadow={textShadow}
+  textAlign="center"
+>
+  About
+</Heading>; */
 }
+
+// {
+//   paragraphs.map((paragraph, index) => (
+//     <Text key={index.toString()}>{paragraph}</Text>
+//   ));
+// }
