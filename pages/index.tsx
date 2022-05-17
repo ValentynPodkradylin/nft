@@ -18,7 +18,10 @@ const Index = () => {
     <>
       <Head>
         <meta name="viewport" />
-        <meta name="description" content="..." />
+        <meta
+          name="description"
+          content="DontGiveaFuckBois is an authentic project with a unique style and background story. We don't repeat anyone and remain who we are, bringing our own mentality and culture with us. Our community has a certain message and is the most motivated team that supports each of its members and will soon reach the top."
+        />
         <meta name="robots" content="all" />
         <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="author" content="rtutii" />
